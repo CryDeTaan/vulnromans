@@ -1,0 +1,68 @@
+<div class="divide-y divide-gray-200">
+    <div class="pb-4 leading-6 font-bold sm:leading-7">
+        <p class="text-3xl text-cyan-600">{{ title }}</a>
+        </p>
+    </div>
+    <div class="py-4 space-y-4 text-gray-700 text-lg leading-7">
+        <p>Most advanced online Roman Numerals Converter.</p>
+        <ul class="list-disc space-y-2">
+            <li class="flex items-start">
+                <span class="h-6 flex items-center sm:h-7">
+                    <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </span>
+                <p class="ml-2">
+                    Customizing your
+                    <code class="font-bold text-gray-900">Number</code>
+                </p>
+            </li>
+            <li class="flex items-start">
+                <span class="h-6 flex items-center sm:h-7">
+                    <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </span>
+                <p class="ml-2">
+                    Extract the <code class="font-bold text-gray-900">Roman Numerals</code>
+                </p>
+            </li>
+            <li class="flex items-start">
+                <span class="h-6 flex items-center sm:h-7">
+                    <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </span>
+                <p class="ml-2">All in a beautiful and instant preview</p>
+            </li>
+        </ul>
+    </div>
+    <div class="py-4 space-y-2 text-gray-700">
+        <p class="text-lg leading-none">Number to convert to Roman Numerals:</p>
+        <form class="space-y-4" action="/" method="POST">
+            <div class="mt-1">
+                <input type="number" name="number" id="number"
+                    class="shadow-sm focus:ring-cyan-500 focus:border-cyan-500 block w-full border-gray-300 rounded-md"
+                    placeholder="17" value="{{ number }}">
+            </div>
+
+            <button type="submit"
+                class="inline-flex w-full items-center justify-center px-4 py-2 border border-transparent font-medium rounded-md shadow-sm text-white bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-700">
+                Convert &rarr;
+            </button>
+
+        </form>
+    </div>
+    <div class="py-4 space-y-2 text-gray-700 text-lg leading-7 w-full text-center">
+        <p>Roman Numerals</p>
+        <p class="text-4xl font-mono text-cyan-700 font-semibold break-all">
+            {{ romans }}
+        </p>
+    </div>
+</div>
